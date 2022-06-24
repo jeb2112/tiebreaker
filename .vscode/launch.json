@@ -1,0 +1,81 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "main",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceRoot}/main.py",
+            "args": [
+                "--size", "360x640", // for gal6 emulation
+                "--dpi","577", // for gal6
+                "--", // separator of kivy options and program options
+                "--test","False",
+                "--debug","False",
+                "--gfa","3,2,5,3"
+            ],
+            "justMyCode": false,
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "main (debug)",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceRoot}/main.py",
+            "args": [
+                "--size", "360x640", // for gal6 emulation
+                "--dpi","577", // for gal6
+                "--", // separator of kivy options and program options
+                "--test","False",
+                "--debug","True",
+                "--gfa","2,9,9,2",
+                "--wlt","L",
+                "--ptype","bar"
+            ],
+            "justMyCode": false,
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "main (test)",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceRoot}/main.py",
+            "args": [
+                "--size", "360x640", // for gal6 emulation
+                "--dpi","577", // for gal6
+                "--", // separator of kivy options and program options
+                "--test","True",
+                "--debug","False",
+                "--gfa","3,2,5,3"
+            ],
+            "justMyCode": false,
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "demo",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceRoot}/demo.py",
+            "justMyCode": false,
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "demo2",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceRoot}/demo2.py",
+            "justMyCode": false,
+            "console": "integratedTerminal"
+        },
+    ]
+}

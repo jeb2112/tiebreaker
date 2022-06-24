@@ -1,0 +1,8 @@
+.vscode/settings.json
+.buildozer
+__pycache__
+*.pyc
+bin
+testimages
+demo*py
+kivygarden_matplotlib
