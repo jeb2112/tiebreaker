@@ -25,8 +25,9 @@ github_username:  jeb2112
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-hydejack
-remote_theme: pages-themes/slate@v0.2.0
+theme: jekyll-theme-slate
+# remote_theme: pages-themes/slate@v0.2.0
+remote_theme: hydecxrop/hydejack@v9
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
