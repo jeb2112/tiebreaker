@@ -30,7 +30,7 @@ source.include_patterns = assets/*,images/*.png,fonts\/*.ttf,*.ttf
 #source.exclude_patterns = license,images/*/*.jpg
 
 # (str) Application versioning (method 1)
-version = 0.12
+version = 0.13
 
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]
@@ -287,6 +287,7 @@ android.allow_backup = True
 # android.no-compile-pyo = True
 
 # (str) The format used to package the app for release mode (aab or apk).
+# note a release aab must be uninstalled before an apk can be reinstalled by buildozer debug deploy
 android.release_artifact = aab
 
 #

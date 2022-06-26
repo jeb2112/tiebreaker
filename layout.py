@@ -62,18 +62,20 @@ class NumericInput(TextInput):
 class MyDropDown(DropDown):
 
     # create a dropdown. mlist is the list of menu items
-    def __init__(self,mlist=None,color=[1,1,1,1],background_color=[1,1,1,1],font_size=15.0):
+    def __init__(self,mlist=None,color=[1,1,1,1],background_color=[1,1,1,1],font_scale=1):
         super(MyDropDown,self).__init__()
         if mlist is None:
             raise Exception('no menu list provided')
-        self.font_size = font_size
         self.mlist = mlist
         self.bheight = int(Window.size[1] * .05)
         for index in range(len(self.mlist)):
             # for dropdowns, need to specify the height manually
             # %% of window is hard-coded for now
             btn = Button(text=self.mlist[index], size_hint_y=None, height=self.bheight, \
-                    color=color, background_color = background_color, font_size = self.font_size)
+                    color=color, background_color = background_color)
+            # where does default font size get set in android?? it's exactly 4x linux font size
+            # in the meantime, use this hack to scale the font for a smaller menu
+            btn.font_size *= font_scale
             btn.bind(on_release=lambda btn: self.select(btn.text))
             self.add_widget(btn)
 

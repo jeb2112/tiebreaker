@@ -50,7 +50,7 @@ class Help():
         self.titlimg = './images/tb_icon.png'
         self.bgcolor = [243/256,237/256,218/256,1]
         self.fgcolor = [81/256,101/256,115/256,1] # gunmetal
-        self.fgcolor = [88/256,88/256,88/256,1] # taupe
+        self.fgcolor = [88/256,88/256,88/256,1] # gray kivy default
         self.category = 'about'
         self.mlist = ['help','about']
         self.idx = 1

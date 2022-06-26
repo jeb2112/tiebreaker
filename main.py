@@ -231,7 +231,7 @@ class TieBreaker(App):
         self.layout.mb.bind(on_release=mbcallback)
         mb2callback = partial(self.dropdown_open,mlist=self.layout.mlist[self.layout.mbkeys[2]])
         self.layout.mb2.bind(on_release=mb2callback)
-        menucallback = partial(self.dropdown_open,mlist = self.help.mlist,font_size=12.0)
+        menucallback = partial(self.dropdown_open,mlist = self.help.mlist,font_scale=0.8)
         self.layout.titlemenu.bind(on_release=menucallback)
         # set defaults. note that defaults in self.debug for __init__() 
         # happen before build(), so the default for mb2.text has to be 
