@@ -25,7 +25,7 @@ github_username:  jeb2112
 
 # Build settings
 markdown: kramdown
-# theme: Slate
+theme: jekyll-theme-slate
 remote_theme: pages-themes/slate@v0.2.0
 plugins:
   - jekyll-feed
@@ -36,8 +36,8 @@ plugins:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
-  - Gemfile
-  - Gemfile.lock
+  # - Gemfile
+  # - Gemfile.lock
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
