@@ -39,28 +39,6 @@ class TieBreaker(App):
         self.layout = MyLayout()
         self.data = Data(gfa=self.gfa)
         self.help = Help()
-        self.help.set_category('about')
-        # for first time launch only
-        if platform == 'android':
-            from android.storage import app_storage_path
-            settings_path = app_storage_path()
-            from android.storage import primary_external_storage_path
-            primary_ext_storage = primary_external_storage_path()
-            from android.permissions import request_permissions, Permission
-            request_permissions([Permission.READ_EXTERNAL_STORAGE, Permission.WRITE_EXTERNAL_STORAGE])
-            fpath = os.path.join(settings_path,'TieBreaker.json')
-        else:
-            fpath = './images/TieBreaker.json'
-        if True: # for testing, not for release
-            if os.path.exists(fpath):
-                self.logger.info('fpath = {}'.format(fpath))
-                os.remove(fpath)
-        config = JsonStore(fpath)
-        # awkward. python-jsonstore didn't require double-keying, but didn't run on android. 
-        # kivy-jsonstore requires double-keying
-        if not config._data.get('config',{}).get('firstlaunch'):
-            self.layout.fl.add_widget(self.help.hlayout)
-            config.put('config',firstlaunch=datetime.now().strftime("%A, %d. %B %Y %I:%M%p"))
 
         if self.debug or self.test:
             self.data.gfa = {"A_gf":[gfa[0]],"A_ga":[gfa[1]], \
