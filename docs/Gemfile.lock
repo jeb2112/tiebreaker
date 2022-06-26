@@ -271,7 +271,6 @@ DEPENDENCIES
   github-pages
   jekyll-compose
   jekyll-remote-theme
-  minima (~> 2.0)
   slate
   tzinfo-data
 
