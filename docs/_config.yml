@@ -16,7 +16,7 @@
 title: TieBreaker
 email: tiebreaker2112@yahoo.com
 description: >- # this means to ignore newlines until "baseurl:"
-  The TieBreaker android app is a calculator that may be used during the round robin stage of a hockey tournament.
+  An android app for hockey players and coaches
 baseurl: "/tiebreaker/" # the subpath of your site, e.g. /blog
 domain: "jeb2112.github.io"
 url: "https://jeb2112.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -28,6 +28,16 @@ markdown: kramdown
 # theme: jekyll-theme-slate
 # remote_theme: pages-themes/slate@v0.2.0
 remote_theme: hydecorp/hydejack@v9
+accent_image: /images/tb_icon.png
+menu:
+  - title: About
+    url: /about
+  - title: Instructions
+    url: /instructions
+  - title: Privacy Policy
+    url: /privacy
+  - title: Download
+    url: /download
 plugins:
   - jekyll-feed
   - jekyll-remote-theme

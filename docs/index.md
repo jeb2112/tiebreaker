@@ -3,16 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
+title: TieBreaker
 ---
-### Overview
-- TieBreaker app analyzes a set of games in the preliminary round-robin of a hockey tournament.
-- Most typically, there could be four teams in the round-robin, three games played by each team, and two teams qualifying for further play.
-- In the event of a tie for 2nd and 3rd place in the round robin standings, a tie-breaker formula is used to determine the qualifier.
-- Frequently, the formula is a fraction or ratio deriving from goals tallied, both for and against.
-- This assessment is easily made after the final game of the round robin has been played when all the scoring is known.
-- However, for fans of the 3rd and final game of one or both of the teams in question, it may be of interest to know the several goal-scoring scenarios that lead to qualification, _before_ or _during_ that final 3rd game.
-- TieBreaker app displays those goal-scoring scenarios.
+TieBreaker is a calculator that may be used to evaluate a tie in the standings of the round robin stage of a hockey tournament.
 
-### Privacy Policy
-1. TieBreaker app collects no user data. 
-2. It does not access any files on the user's phone, or write any files to the phone. 
+At this time, it is only supported on Android phones, and has not been tested on any other device.
