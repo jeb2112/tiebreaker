@@ -5,7 +5,7 @@ permalink: /instructions/
 ---
 1. Team A has completed all 3 games of the round robin, while Team X has completed 2 games.
 2. Enter the total goals (for and against) for both teams, then press return.
-![step 1](/images/tb_instructions_1.png "Step 1")
+![step 1]({{site.baseurl}}/images/tb_instructions_1.png "Step 1")
 
     *Team A has scored 12 for and given up 12 against during their 3 games. Team X has scored 13 and given up 10 in just 2 games.*
 3. The goal scoring scenarios in the 3rd and final game required for Team X to qualify are plotted as a matrix.
