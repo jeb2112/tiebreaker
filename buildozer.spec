@@ -30,7 +30,7 @@ source.include_patterns = assets/*,images/*.png,fonts\/*.ttf,*.ttf
 #source.exclude_patterns = license,images/*/*.jpg
 
 # (str) Application versioning (method 1)
-version = 0.13
+version = 0.14
 
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]
@@ -94,7 +94,6 @@ fullscreen = 0
 #icon.adaptive_background.filename = %(source.dir)s/data/icon_bg.png
 
 # (list) Permissions
-# android.permissions = READ_EXTERNAL_STORAGE,WRITE_EXTERNAL_STORAGE,INTERNET
 # android.permissions = INTERNET
 
 # (list) features (adds uses-feature -tags to manifest)

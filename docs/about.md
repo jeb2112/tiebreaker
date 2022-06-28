@@ -11,3 +11,5 @@ permalink: /about/
 - This assessment is easily made after the final game of the round robin has been played when all the scoring is known.
 - However, for fans of the 3rd and final game of one or both of the teams in question, it may be of interest to know the several goal-scoring scenarios that lead to qualification, _before_ or _during_ that final 3rd game.
 - TieBreaker app displays those goal-scoring scenarios.
+
+At this time, the app is only supported on Android phones, and has not been tested on any other device.

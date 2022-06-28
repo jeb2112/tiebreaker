@@ -16,7 +16,7 @@
 title: TieBreaker
 email: tiebreaker2112@yahoo.com
 description: >- # this means to ignore newlines until "baseurl:"
-  An android app for hockey players and coaches
+  An android app for parents and coaches at a hockey tournament
 baseurl: "/tiebreaker/" # the subpath of your site, e.g. /blog
 domain: "jeb2112.github.io"
 url: "https://jeb2112.github.io" # the base hostname & protocol for your site, e.g. http://example.com
