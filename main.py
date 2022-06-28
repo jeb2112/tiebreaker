@@ -39,29 +39,27 @@ class TieBreaker(App):
         self.layout = MyLayout()
         self.data = Data(gfa=self.gfa)
         self.help = Help()
-        self.imgdir = None
     
-        if platform == 'linux':
-            if self.debug or self.test:
-                self.data.gfa = {"A_gf":[gfa[0]],"A_ga":[gfa[1]], \
-                        "X_gf":[gfa[2]],"X_ga":[gfa[3]]}
-                setattr(self.layout.tinput_A_ga,'text',str(self.data.gfa['A_ga'][0]))
-                setattr(self.layout.tinput_A_gf,'text',str(self.data.gfa['A_gf'][0]))
-                setattr(self.layout.tinput_X_ga,'text',str(self.data.gfa['X_ga'][0]))
-                setattr(self.layout.tinput_X_gf,'text',str(self.data.gfa['X_gf'][0]))
-            if self.debug:
-                self.imgdir = '/home/jbishop/src/python/kivy/testimages'
-                setattr(self.layout.mb2,'text',ptype)
-                self.layout.wltstate = wlt
-                self.data.wltstate = self.layout.wltstate
-                if ptype != 'matrix':
-                    self.layout.check[self.layout.wltstate].active = True
-                self.doplot()
-            if self.test:
-                self.imgdir = '/home/jbishop/src/python/kivy/testimages/comp'
-                # not sure why this needs delay
-                Clock.schedule_once(self.do_test,1)
-                self.ilabel = None
+        if self.debug or self.test:
+            self.data.gfa = {"A_gf":[gfa[0]],"A_ga":[gfa[1]], \
+                    "X_gf":[gfa[2]],"X_ga":[gfa[3]]}
+            setattr(self.layout.tinput_A_ga,'text',str(self.data.gfa['A_ga'][0]))
+            setattr(self.layout.tinput_A_gf,'text',str(self.data.gfa['A_gf'][0]))
+            setattr(self.layout.tinput_X_ga,'text',str(self.data.gfa['X_ga'][0]))
+            setattr(self.layout.tinput_X_gf,'text',str(self.data.gfa['X_gf'][0]))
+        if self.debug:
+            self.imgdir = '/home/jbishop/src/python/kivy/testimages'
+            setattr(self.layout.mb2,'text',ptype)
+            self.layout.wltstate = wlt
+            self.data.wltstate = self.layout.wltstate
+            if ptype != 'matrix':
+                self.layout.check[self.layout.wltstate].active = True
+            self.doplot()
+        if self.test:
+            self.imgdir = '/home/jbishop/src/python/kivy/testimages/comp'
+            # not sure why this needs delay
+            Clock.schedule_once(self.do_test,1)
+            self.ilabel = None
 
         # callbacks for radio button WLT updates
         for c in 'WL': # 'T' isn't implemented yet
