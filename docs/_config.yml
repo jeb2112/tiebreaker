@@ -25,6 +25,9 @@ github_username:  jeb2112
 
 # Build settings
 markdown: kramdown
+kramdown: 
+  math_engine: mathjax
+  math_engine_opts: {}
 # theme: jekyll-theme-slate
 # remote_theme: pages-themes/slate@v0.2.0
 remote_theme: hydecorp/hydejack@v9

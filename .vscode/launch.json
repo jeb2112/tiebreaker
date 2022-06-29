@@ -38,7 +38,7 @@
                 "--", // separator of kivy options and program options
                 "--test","False",
                 "--debug","True",
-                "--gfa","2,9,9,2",
+                "--gfa","12,12,13,10",
                 "--wlt","L",
                 "--ptype","bar"
             ],
