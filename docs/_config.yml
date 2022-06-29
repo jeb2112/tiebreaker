@@ -41,6 +41,8 @@ menu:
     url: /privacy
   - title: Download
     url: /download
+  - title: Math
+    url: /math
 plugins:
   - jekyll-feed
   - jekyll-remote-theme

@@ -130,6 +130,7 @@ class Data(object):
                 self.currentfont = 'DejaVuSans.ttf'
         if False:
             self.plot_logo()
+        if False:
             self.do_combo()
 
     def set_axes_height(ax, h):
@@ -148,6 +149,8 @@ class Data(object):
         c6set = combinations(r6set,6)
         c5set = combinations(r5set,5)
         ptset = set()
+        ccount = 1
+        T1 = T2 = T3 = 0
         for c in c6set:
             cm = np.zeros((4,4),dtype=int)
             pts = np.zeros(4,dtype=int)
@@ -156,7 +159,21 @@ class Data(object):
             
             for t in range(0,4):
                 pts[t] = sum(cm[t,:])
-            ptset.add(tuple(np.sort(pts)))
+            T = tuple(reversed(tuple(np.sort(pts))))
+            ptset.add(T)
+            if T == (6,3,3,0):
+                T1 += 1
+            elif T == (4,3,3,2):
+                T2 += 1
+            elif T == (3,3,3,3):
+                print(cm)
+                T3 += 1
+
+            ccount += 1
+        print('r6set: {}'.format(r6set))
+        print('c6set: {} combinations'.format(ccount))
+        print('unique points combinations: {}'.format(ptset))
+        print('T1 = {}, T2 = {}, T3 = {}'.format(T1/3,2*T2/3,T3))
         a=1           
 
     def calc(self):
