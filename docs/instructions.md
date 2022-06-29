@@ -14,7 +14,7 @@ permalink: /instructions/
 
     *If team X loses the final game, there will be a tie with team A in the final round robin standings, and the tie-breaker formula will be needed to resolve it.*
 
-2. The tie breaking formula used by many tournament organizations is the team with the higher ratio of $$\frac{\sum_{i=1}^N GF_i}{\sum_{i=1}^N (GF_i+GA_i)}$$ qualifies to advance, where $$GF_i,GA_i$$ are the goals for and against in the $$i'th$$ game, and $$N$$ is the number of games played in the round robin. $$N$$ is usually 3 as depicted in this example.
+2. The tie breaking formula used by many tournament organizations is that the team with the higher ratio of $$\frac{\sum_{i=1}^N GF_i}{\sum_{i=1}^N (GF_i+GA_i)}$$ qualifies to advance, where $$GF_i,GA_i$$ are the goals for and against in the $$i'th$$ game, and $$N$$ is the number of games played in the round robin. For a four team round robin, $$N$$ is usually 3 as depicted in this example.
 
 3. Enter the total goals (for and against) for teams A and X, pending team X's final game, and then press return.
 
@@ -37,19 +37,22 @@ permalink: /instructions/
     ![step 4]({{site.baseurl}}/images/tb_instructions_4.png "Step 4")
 
     *The black 'x' indicates a scenario in which team X lost 5-2 in their final game, and are still tied with team A based on overall goals ratio. Tournament organizers will go to a second tie-breaking rule, which is then beyond the scope of this app.*
-7. Note that matrix output shows both Win (GF>GA) and Loss (GA>GF) scenarios for team X in game 3, whereas it is only a Loss for team X that will lead to a Tie in the round robin standings, in this fictitious example. And in general, for any round robin scenario it is known in advance of game 3 whether it is a Win or Loss that leads to a Tie in the final standings.
+7. Note that matrix output shows both Win ($$GF>GA$$) and Loss ($$GA>GF$$) scenarios for team X in game 3, whereas it is only a Loss for team X that will lead to a Tie in the round robin standings, in this fictitious example. And in general, for any round robin scenario it is known in advance of game 3 whether it is a Win or Loss that leads to a Tie in the final standings.
 8. To select alternate outputs showing only the known Win/Loss scenario, use the 'output' menu.
 
     ![step 5]({{site.baseurl}}/images/tb_instructions_5.png "Step 5")
 
     *Select \'bar\' or \'tabular\' for Win- or Loss-only scenarios. This will activate the radio buttons. To select Win or Loss scenarios use the \'W\' and \'L\' radio buttons respectively.*
 
-9. The bar chart displays a modified vertical axis showing the net difference GF-GA. If the 'L' radio button is clicked to switch to the Loss scenario, the bar chart is plotted like this:
+9. The bar chart displays a modified vertical axis showing the net difference $$GF-GA$$. If the 'L' radio button is clicked to switch to the Loss scenario, the bar chart is plotted like this:
 
     ![step 7]({{site.baseurl}}/images/tb_instructions_7.png "Step 7")
 
     *In this Loss scenario, GF < GA so the vertical axis is negative. The plot shows that for GA of 0,1 or 2, team X will qualify regardless of goals for. If the GA >= 3, then team X will qualify if they lose by no more than 2 goals, and they will still be tied with team A if they lose by no more than 3 goals. If the GA >=4, team X will fail to qualify if they lose by 4 goals or more.*
-10. If the 'tabular' output is selected, then the same data are written out in a table. If there are more than four rows in the table, the table can be scrolled.
+
+10. For both Win and Loss scenarios, a data point for $$GF-GA=0$$ is plotted. Obviously this is a tie and not a win or a loss. Nevertheless, this data point is included to include one point of continuity between the separate Win and Loss plots.
+
+11. If the 'tabular' output is selected, then the same data are written out in a table. If there are more than four rows in the table, the table can be scrolled.
 
     ![step 8]({{site.baseurl}}/images/tb_instructions_8.png "Step 8")
 

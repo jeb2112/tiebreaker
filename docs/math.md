@@ -73,8 +73,6 @@ The linear Diophantine equation has a solution according to the following theore
 The equation ax+by=c has a solution (where x and y are integers) if and only if c 
 is a multiple of the greatest common divisor of a and b.
 ```
-and since -3 is a multiple of 1, therefore the numerical example does have a (at least one) solution by simple inspection. 
+and since -3 is a multiple of 1, therefore the numerical example does have a (at least one) solution by simple inspection. For the actual solutions, I found that python actually has a diophantine solver in the symbolic math package, so just for the heck of it I used that. 
 
-As for the actual solutions, I found that python actually has a diophantine solver in the symbolic math package, so just for the heck of it I used that. 
-
-As for the more relevant case of inequality, that was more problematic. Inequality doesn't seem to be included in Diophantine analysis, and the restriction to integer solutions eliminates certain other types of analysis. I'm not any sort of mathematician, and carried this no further. The inequalities were solved by simple evaluation.   
+As for the larger case of inequality, that was more problematic. Inequality doesn't seem to be included in Diophantine analysis, and the restriction to integer solutions eliminates certain other types of analysis. I'm not any sort of mathematician, and carried this no further. The inequalities were solved by simple evaluation.   
