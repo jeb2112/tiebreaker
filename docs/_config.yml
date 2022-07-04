@@ -39,10 +39,10 @@ menu:
     url: /instructions
   - title: Privacy Policy
     url: /privacy
-  - title: Download
-    url: /download
   - title: Math
     url: /math
+  - title: Download
+    url: /download
 plugins:
   - jekyll-feed
   - jekyll-remote-theme

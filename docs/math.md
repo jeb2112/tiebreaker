@@ -43,15 +43,15 @@ From this list it can be seen that there are three cases in which there is a tie
 
 So overall there is a 2.2% chance that any round robin will end up requiring a tie-breaker according to a goals ratio formula. Note that the (3,3,3,3) case corresponds to all 6 games ending as Ties, and this one scenario is not covered in the current version of the app. Note also that while I have focused on the question of qualification for further play between the 2nd and 3rd place finishers in the instructions to this app, the same goals ratio formula may also be used to break a tie between 1st and 2nd place finishers for purposes of assigning seeds in the elimination bracket of the tournament. 
 
-The most common tie-break statistic is:
+The tie-break statistic is:
 
 $$\frac{\sum_{i=1}^N GF_i}{\sum_{i=1}^N (GF_i+GA_i)}, N = \text{number of games}$$
 
-Let $$x,y$$ be the numbers of goals for and against for team X in the final game of the round robin. Then in order for team X to qualify over team A in an $$N=3$$ round robin, it is required
+Let $$x,y$$ be the numbers of goals for and against for team X in the final game of the round robin. Then in order for team X to qualify over team A in an $$N=3$$ round robin, it is required that:
 
 $$\frac{x + \sum_{i=1}^2 GF_{X,i}}{x + y + \sum_{i=1}^2 (GF_{X,i}+GA_{X,i})} > \frac{\sum_{i=1}^3 GF_{A,i}}{\sum_{i=1}^3 (GF_{A,i}+GA_{A,i})}$$
 
-which for the numerical example in the Instructions reduces to 
+which for the numerical example in the Instructions reduces to: 
 
 $$x - y + 3 > 0 $$
 
@@ -73,6 +73,6 @@ The linear Diophantine equation has a solution according to the following theore
 The equation ax+by=c has a solution (where x and y are integers) if and only if c 
 is a multiple of the greatest common divisor of a and b.
 ```
-and since -3 is a multiple of 1, therefore the numerical example does have a (at least one) solution by simple inspection. For the actual solutions, I found that python actually has a diophantine solver in the symbolic math package, so just for the heck of it I used that. 
+and since -3 is a multiple of 1, therefore the numerical example does have a (at least one) solution. For the general case of equality, I found that python has a diophantine solver in the symbolic math package so just for the heck of it I used that. 
 
-As for the larger case of inequality, that was more problematic. Inequality doesn't seem to be included in Diophantine analysis, and the restriction to integer solutions eliminates certain other types of analysis. I'm not any sort of mathematician, and carried this no further. The inequalities were solved by simple evaluation.   
+As for the much larger case of inequality, that was more problematic. Inequality doesn't seem to be included in Diophantine analysis, and the restriction to integer solutions eliminates certain other types of analysis. I'm not any sort of mathematician, and carried this no further. The inequalities were solved by simple evaluation.   
