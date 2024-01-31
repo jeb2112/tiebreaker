@@ -50,7 +50,7 @@ permalink: /instructions/
 
     *In this Loss scenario, GF < GA so the vertical axis is negative. The plot shows that for GA of 0,1 or 2, team X will qualify regardless of goals for. If the GA >= 3, then team X will qualify if they lose by no more than 2 goals, and they will still be tied with team A if they lose by no more than 3 goals. If the GA >=4, team X will fail to qualify if they lose by 4 goals or more.*
 
-10. For both Win and Loss scenarios, a data point for $$GF-GA=0$$ is plotted. Obviously this is a tie and not a win or a loss. Nevertheless, this data point is included to provide a small overlap and help readability between the separate Win and Loss plots.
+10. For both Win and Loss scenarios, a data point for $$GF-GA=0$$ is plotted. Obviously this is a tie and not a win or a loss. Currently, the app does not cover the case in which a tie outcome in game 3 can also lead to a Tie in the final round robin standings. Therefore, this data point is included merely to provide a small overlap and help readability between the separate Win and Loss plots.
 
 11. If the 'tabular' output is selected, then the same data are written out in a table. If there are more than four rows in the table, the table can be scrolled.
 
